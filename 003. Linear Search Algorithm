@@ -1,0 +1,19 @@
+//Linear Search Algorithm
+#include <iostream>
+using namespace std;
+int searchNumber(int arr[],int N,int X){
+    for(int i=0;i<N;i++){
+        if(arr[i]==X){
+            return i;
+        }
+    }
+    return -1;
+}
+int main()
+{
+    int arr[]={1,43,5,6,45,94,42,65,20};
+    int N=sizeof(arr)/sizeof(arr[0]);
+    int X=94;
+    cout<<"Element "<<X<<" found at the index : "<<searchNumber(arr,N,X);
+    return 0;
+}
